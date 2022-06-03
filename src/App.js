@@ -6,8 +6,11 @@ import Cloud from './pages/Cloud';
 import Aws from './pages/Aws';
 import {  Routes, Route } from "react-router-dom";
 import './App.css';
-
+import Particles from './components/Particles';
+import ScrollButton from './components/ScrollButton';
+import { Content } from './components/Styles';
   const App = () =>  {
+
     return (
       <div className="App">
          <div>
@@ -20,7 +23,11 @@ import './App.css';
               </Route>
             </Routes>
           </div>
+          <Particles id="tsparticles" />
+          <Content />
+          <ScrollButton />
       </div>
+      
     );
   }
 

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import {  Navbar, Nav, Container } from 'react-bootstrap';
 import { Outlet, Link } from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default class NavbarComponents extends Component {
   render() {
     return (
         <div>
-            <Navbar bg='primary' variant='dark' sticky='top' expand='md'>
-              <Container>
+            <Navbar bg='light' variant='light' sticky='top' expand='md' >
+              <Container className="justify-content-center">
               <Navbar.Brand>
-                  Wikireadme
+                  wikireadme
                 </Navbar.Brand>
 
                 <Navbar.Toggle/>
