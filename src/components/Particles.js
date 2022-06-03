@@ -50,7 +50,7 @@ const ParticlesComponent = (props) => {
           value: { min: 1, max: 2 }, // using a different opacity, to have some semitransparent effects
         },
         size: {
-          value: { min: 1, max: 3 }, // let's randomize the particles size a bit
+          value: { min: 5, max: 10 }, // let's randomize the particles size a bit
         },
       },
     };
