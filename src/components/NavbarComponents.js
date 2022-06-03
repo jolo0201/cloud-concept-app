@@ -6,7 +6,7 @@ export default class NavbarComponents extends Component {
   render() {
     return (
         <div>
-            <Navbar bg='light' variant='light' sticky='top' expand='md' >
+            <Navbar bg='light' variant='light' sticky='top' expand='md'  >
               <Container className="justify-content-center">
               <Navbar.Brand>
                   wikireadme
@@ -14,7 +14,7 @@ export default class NavbarComponents extends Component {
 
                 <Navbar.Toggle/>
                 <Navbar.Collapse>
-                    <Nav>
+                    <Nav className="justify-content-end" style={{ width: "100%" }}>
                         <Nav.Link  as={Link} to={"/home"}>Home</Nav.Link>
                         <Nav.Link  as={Link} to={"/cloud"}>Cloud Infrastracture Fundamentals</Nav.Link>
                         <Nav.Link  as={Link} to={"/aws"}>AWS Global Infrastracture</Nav.Link>
